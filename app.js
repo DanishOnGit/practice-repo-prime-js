@@ -47,7 +47,10 @@ else if(date>monthDays[month-1]){
     if(date==1){
     output.innerText=text1;
     
-}    else{
+}  
+if(date==2){
+    output.innerText=text2;
+}  else{
     for(var i=2;i<date;i++){
         if(date%i==0){
             output.innerText=text2;
@@ -66,5 +69,8 @@ else if(date>monthDays[month-1]){
 clickBtn.addEventListener("click",checkInputValid)
 
 function invalidInput(){
+    
     alert("Invalid Input")
+    output.innerText=""
+    
 }
