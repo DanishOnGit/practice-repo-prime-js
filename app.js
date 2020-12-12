@@ -49,7 +49,7 @@ else if(date>monthDays[month-1]){
     
 }  
 if(date==2){
-    output.innerText=text2;
+    output.innerText=text3;
 }  else{
     for(var i=2;i<date;i++){
         if(date%i==0){
