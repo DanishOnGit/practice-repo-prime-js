@@ -19,25 +19,25 @@ console.log(split[0])
   var year=split[2];
 if(isNaN(date)||isNaN(month)||isNaN(year)){
 
-   console.log("enter sumthing valid")
+   
    invalidInput()
    
     
 }
    else if(date<=0||date>31||month<=0||month>12||year<1000||year>9999){
 
-    console.log("enter sumthing valid")
+    
     invalidInput()
    
 }
 else if(date>monthDays[month-1]){
-    console.log("enter sumthing valid")
+    
     invalidInput()
 }
    
 else if(!Number.isInteger(Number(date)) || !Number.isInteger(Number(month))||!Number.isInteger(Number(year))){
 
-    console.log("enter sumthing valid")
+    
     invalidInput()
     
 }
