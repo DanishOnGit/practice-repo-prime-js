@@ -35,15 +35,12 @@ else if(date>monthDays[month-1]){
     invalidInput()
 }
    
-// else if(!Number.isInteger(Number(`${date}`)) || !Number.isInteger(Number(`${month}`))||!Number.isInteger(Number(`${year}`))){
+else if(!Number.isInteger(Number(date)) || !Number.isInteger(Number(month))||!Number.isInteger(Number(year))){
 
-//     console.log("enter sumthing valid")
-//     invalidInput()
-
-//    return
+    console.log("enter sumthing valid")
+    invalidInput()
     
-
-// }
+}
     if(date==1){
     output.innerText=text1;
     
