@@ -14,7 +14,7 @@ h1{
 .input{
     display: block;
     margin: auto;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0.5rem;
     margin-top: 5rem;
     width: 30vw;
@@ -44,4 +44,13 @@ h1{
     height:10vh;
     margin: auto;
     padding: 1rem;
+}
+
+@media only screen and (max-width:600px){
+    .input{
+        width:60vw;
+    }
+    .outputDiv{
+        width: 60vw;
+    }
 }
