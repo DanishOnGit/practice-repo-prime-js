@@ -1,22 +1,22 @@
-var userInput=document.querySelector("#inputDate")
-var clickBtn=document.querySelector("#btnCheck")
-var output=document.querySelector("#result")
+const userInput=document.querySelector("#inputDate")
+const clickBtn=document.querySelector("#btnCheck")
+const output=document.querySelector("#result")
 
-var text1="Date is neither prime nor composite"
-var text2="Date of birth is not prime number."
-var text3="Date of birth is prime number."
- var monthDays=[31,29,31,30,31,30,31,31,30,31,30,31]
+const text1="Date is neither prime nor composite"
+const text2="Date of birth is not prime number."
+const text3="Date of birth is prime number."
+const monthDays=[31,29,31,30,31,30,31,31,30,31,30,31]
 
 
 function checkInputValid(){
     flag=false;
-    var inputDob=userInput.value;
+    let inputDob=userInput.value;
     // console.log(inputDob)
-var split=inputDob.split("/")
+let split=inputDob.split("/")
 console.log(split[0])
-  var date=split[0];
-  var month=split[1];
-  var year=split[2];
+  let date=split[0];
+  let month=split[1];
+  let year=split[2];
 if(isNaN(date)||isNaN(month)||isNaN(year)){
 
    
@@ -48,7 +48,7 @@ else if(!Number.isInteger(Number(date)) || !Number.isInteger(Number(month))||!Nu
 if(date==2){
     output.innerText=text3;
 }  else{
-    for(var i=2;i<date;i++){
+    for(let i=2;i<date;i++){
         if(date%i==0){
             output.innerText=text2;
             break;
